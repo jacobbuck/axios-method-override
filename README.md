@@ -5,12 +5,10 @@ Lets you use HTTP PATCH, PUT and DELETE in by mimicking the HTTP method with a `
 ## Usage
 
 ```
-import methodOverride from 'axios-method-override';
+import axiosMethodOverride from 'axios-method-override';
 
-axios.interceptors.request.use(methodOverride);
+axiosMethodOverride(axios);
 
 var instance = axios.create();
-instance.interceptors.request.use(methodOverride);
+axiosMethodOverride(instance);
 ```
-
-See [Interceptors](https://github.com/mzabriskie/axios/blob/master/README.md#interceptors).
