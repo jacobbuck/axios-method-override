@@ -1,6 +1,6 @@
 {
   "name": "axios-method-override",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "axios request method override plugin",
   "main": "index.js",
   "scripts": {
