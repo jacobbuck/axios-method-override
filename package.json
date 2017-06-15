@@ -10,11 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/jacobbuck/axios-method-override.git"
   },
-  "keywords": ["axios", "http", "interceptor", "method", "method-override"],
+  "keywords": [
+    "axios",
+    "http",
+    "interceptor",
+    "method",
+    "method-override"
+  ],
   "author": "Jacob Buck <buck.jacob@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jacobbuck/axios-method-override/issues"
   },
-  "homepage": "https://github.com/jacobbuck/axios-method-override#readme"
+  "homepage": "https://github.com/jacobbuck/axios-method-override#readme",
+  "dependencies": {
+    "object-assign": "^4.1.1"
+  }
 }
