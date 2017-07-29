@@ -4,11 +4,11 @@ Lets you use HTTP PATCH, PUT and DELETE in by mimicking the HTTP method with a `
 
 ## Usage
 
-```
+```js
 import axiosMethodOverride from 'axios-method-override';
 
 axiosMethodOverride(axios);
 
-var instance = axios.create();
+const instance = axios.create();
 axiosMethodOverride(instance);
 ```
