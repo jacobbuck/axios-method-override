@@ -2,9 +2,14 @@
   "name": "axios-method-override",
   "version": "1.0.2",
   "description": "axios request method override plugin",
-  "main": "index.js",
+  "main": "lib/main.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel --out-dir lib src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,7 +28,9 @@
     "url": "https://github.com/jacobbuck/axios-method-override/issues"
   },
   "homepage": "https://github.com/jacobbuck/axios-method-override#readme",
-  "dependencies": {
-    "object-assign": "^4.1.1"
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
