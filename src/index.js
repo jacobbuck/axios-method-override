@@ -16,3 +16,5 @@ const axiosMethodOverride = axios => {
   });
   return axios;
 };
+
+export default axiosMethodOverride;
